@@ -8,6 +8,12 @@
     },
     {
       "path": "./apps/zyro"
+    },
+    {
+      "path": "./apps/client-e2e"
+    },
+    {
+      "path": "./apps/client"
     }
   ]
 }

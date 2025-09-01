@@ -7,12 +7,12 @@ export default defineConfig({
       cypressDir: 'src',
       bundler: 'vite',
       webServerCommands: {
-        default: 'npx nx run @zyro/zyro:dev',
-        production: 'npx nx run @zyro/zyro:preview',
+        default: 'npx nx run @zyro/client:dev',
+        production: 'npx nx run @zyro/client:preview',
       },
-      ciWebServerCommand: 'npx nx run @zyro/zyro:preview',
-      ciBaseUrl: 'http://localhost:4300',
+      ciWebServerCommand: 'npx nx run @zyro/client:preview',
+      ciBaseUrl: 'http://localhost:4141',
     }),
-    baseUrl: 'http://localhost:4200',
+    baseUrl: 'http://localhost:4141',
   },
 });

@@ -4,13 +4,13 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(() => ({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/zyro',
+  cacheDir: '../../node_modules/.vite/apps/client',
   server: {
-    port: 4200,
+    port: 4141,
     host: 'localhost',
   },
   preview: {
-    port: 4300,
+    port: 4141,
     host: 'localhost',
   },
   plugins: [react()],
@@ -27,7 +27,7 @@ export default defineConfig(() => ({
     },
   },
   test: {
-    name: '@zyro/zyro',
+    name: '@zyro/client',
     watch: false,
     globals: true,
     environment: 'jsdom',

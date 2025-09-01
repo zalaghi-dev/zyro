@@ -1,10 +1,10 @@
 {
-  "name": "@zyro/zyro-e2e",
+  "name": "@zyro/client-e2e",
   "version": "0.0.1",
   "private": true,
   "nx": {
     "implicitDependencies": [
-      "@zyro/zyro"
+      "@zyro/client"
     ]
   }
 }
