@@ -4,12 +4,6 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/zyro-e2e"
-    },
-    {
-      "path": "./apps/zyro"
-    },
-    {
       "path": "./apps/client-e2e"
     },
     {
