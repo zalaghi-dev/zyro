@@ -3,7 +3,7 @@
 // import { Login } from '../pages/Login';
 // import { Signup } from '../pages/Signup';
 // import { ChatRoom } from '../pages/ChatRoom';
-import * as React from 'react';
+
 import type {} from '@mui/x-date-pickers/themeAugmentation';
 import type {} from '@mui/x-charts/themeAugmentation';
 import type {} from '@mui/x-data-grid-pro/themeAugmentation';
@@ -16,18 +16,10 @@ import AppNavbar from './components/AppNavbar';
 import Header from './components/Header';
 import MainGrid from './components/MainGrid';
 import SideMenu from './components/SideMenu';
+import { treeViewCustomizations } from './theme/customizations';
 import AppTheme from './theme/AppTheme';
-import {
-  chartsCustomizations,
-  // dataGridCustomizations,
-  datePickersCustomizations,
-  treeViewCustomizations,
-} from './theme/customizations';
 
 const xThemeComponents = {
-  ...chartsCustomizations,
-  // ...dataGridCustomizations,
-  ...datePickersCustomizations,
   ...treeViewCustomizations,
 };
 
