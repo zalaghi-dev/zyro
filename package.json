@@ -2,7 +2,13 @@
   "name": "@zyro/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "pg:up": "docker compose -f docker-compose-pg.yml up -d --build",
+    "pg:down": "docker compose -f docker-compose-pg.yml down",
+    "pg:restart": "docker compose -f docker-compose-pg.yml down && docker compose -f docker-compose-pg.yml up -d --build",
+    "pg:logs": "docker compose -f docker-compose-pg.yml logs -f",
+    "pg:ps": "docker compose -f docker-compose-pg.yml ps"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -12,7 +18,6 @@
     "@mui/x-tree-view": "^8.11.1",
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
-    "@nestjs/platform-express": "^11.0.0",
     "@react-spring/web": "^10.0.1",
     "axios": "^1.6.0",
     "dayjs": "^1.11.18",

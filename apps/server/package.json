@@ -2,6 +2,13 @@
   "name": "@zyro/server",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+    "typeorm": "ts-node ./node_modules/typeorm/cli",
+    "typeorm:run-migrations": "npm run typeorm migration:run -- -d ./db/datasource.ts",
+    "typeorm:generate-migration": "npm run typeorm -- -d ./db/datasource.ts migration:generate ./db/migrations/$npm_config_name",
+    "typeorm:create-migration": "npm run typeorm -- migration:create ./db/migrations/$npm_config_name",
+    "typeorm:revert-migration": "npm run typeorm -- -d ./db/datasource.ts migration:revert"
+  },
   "nx": {
     "targets": {
       "build": {
@@ -82,5 +89,19 @@
       }
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/platform-fastify": "^11.1.8",
+    "@nestjs/swagger": "^11.2.1",
+    "@nestjs/typeorm": "^11.0.0",
+    "fastify": "^5.6.1",
+    "pg": "^8.16.3",
+    "swagger-ui-express": "^5.0.1",
+    "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "ts-node": "10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typeorm-ts-node-commonjs": "^0.3.20"
+  }
 }

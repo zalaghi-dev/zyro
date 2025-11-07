@@ -9,6 +9,7 @@
     "tsBuildInfoFile": "dist/tsconfig.app.tsbuildinfo",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
     "target": "es2021"
   },
   "include": ["src/**/*.ts"],
